@@ -1,9 +1,9 @@
 ## Student service API
 ### Obtener estudiantes
 Obtiene una lista de los estudiantes registrados en la base de datos.
-**URL**: /students  
-**Method**: [GET]
-**Ejemplo**: localhost:3000/students
+**URL**: /students  <br>
+**Method**: [GET] <br>
+**Ejemplo**: localhost:3000/students <br>
 **Request:**  
 `{}`
 **Response:**  
@@ -25,9 +25,9 @@ format: JSON
 
 ### Obtener Estudiante
 Obtiene información de un estudiante registrado en la base de datos.
-**URL**: /students/${id}
-**Method**: [GET]
-**Ejemplo**: localhost:3000/students/1545
+**URL**: /students/${id} <br>
+**Method**: [GET] <br>
+**Ejemplo**: localhost:3000/students/1545 <br>
 **Request:**  
 `{}`
 **Response:**  
@@ -47,9 +47,9 @@ format: JSON
     } `
 ### Modificar Registro
 Modifica un registro existente con un nuevo valor.
-**URL**: /students/${id}
-**Method**: [PUT]
-**Ejemplo**: localhost:3000/students/1545
+**URL**: /students/${id} <br>
+**Method**: [PUT] <br>
+**Ejemplo**: localhost:3000/students/1545 <br>
 **Request:**  
 `{ 
 			_id:  ID",    
@@ -79,9 +79,9 @@ format: JSON
     } `
 ### Crear un registro
 Crea un nuevo estudiante.
-**URL**: /students
-**Method**: [POST]
-**Ejemplo**: localhost:3000/students
+**URL**: /students <br>
+**Method**: [POST] <br>
+**Ejemplo**: localhost:3000/students <br>
 **Request:**  
 `{     
 		    firstName:  String,
@@ -108,9 +108,9 @@ Crea un nuevo estudiante.
 
 ### Eliminar estudiante
 Elimina estudiante registrado.
-**URL**: /students
-**Method**: [DELETE]
-**Ejemplo**: localhost:3000/students/${idEstudiante}
+**URL**: /students <br>
+**Method**: [DELETE] <br>
+**Ejemplo**: localhost:3000/students/${idEstudiante} <br>
 **Request:**  
 `{}`
 **Response:**
@@ -118,10 +118,10 @@ Elimina estudiante registrado.
 ### Promedio de notas por curso
 Retorna el promedio de las notas de los estudiantes pertenecientes a un curso dado su id.
 
-**URL**:  /students/average/${subjectId}
+**URL**:  /students/average/${subjectId} <br>
 
-**Method**:  [DELETE]
-**Ejemplo**: localhost:3000/students/${idEstudiante}
+**Method**:  [DELETE] <br>
+**Ejemplo**: localhost:3000/students/${idEstudiante} <br>
 **Request:**  
 `{}`
 **Response:**
