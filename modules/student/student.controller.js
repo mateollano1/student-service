@@ -29,6 +29,11 @@
         function(req, res) {
             res.status(200).json(req.response);
         });
+    router.put('/subject/:subjectId',
+        StudentMiddleware.modifyScore,
+        function(req, res) {
+            res.status(200).json(req.response);
+        });
 
     router.delete('/:studentId',
         StudentMiddleware.removeStudent,

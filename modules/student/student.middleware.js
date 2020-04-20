@@ -7,7 +7,8 @@
         getStudentById: getStudentById,
         modifyStudent: modifyStudent,
         removeStudent: removeStudent,
-        calculateAverage
+        calculateAverage,
+        modifyScore
     };
 
     var StudentService = require('./student.module')().StudentService;
@@ -61,6 +62,21 @@
             next(err);
         }
 
+    }
+
+    function modifyScore(req, res, next) {
+        StudentService.modifyScoreBySubject(req.params.subjectId, req.body.score)
+            .then(success)
+            .catch(error);
+
+        function success(data) {
+            req.response = data;
+            next();
+        }
+
+        function error(err) {
+            next(err);
+        }
     }
 
     function modifyStudent(req, res, next) {

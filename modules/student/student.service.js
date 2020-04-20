@@ -7,7 +7,8 @@
         fetchStudentById: fetchStudentById,
         updateStudent: updateStudent,
         deleteStudent: deleteStudent,
-        findBySubject: findBySubject
+        findBySubject: findBySubject,
+        modifyScoreBySubject
     };
 
     var StudentModel = require('./student.module')().StudentModel;
@@ -40,7 +41,10 @@
 
     function findBySubject(subjectId) {
         return StudentModel.find({ subjectId: subjectId }).exec();
+    }
 
+    function modifyScoreBySubject(subjectId, score) {
+        return StudentModel.updateMany({ "subjectId": subjectId }, { "$set": { "score": score } }).exec();
     }
 
 })();
