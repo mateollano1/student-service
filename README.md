@@ -126,3 +126,16 @@ Retorna el promedio de las notas de los estudiantes pertenecientes a un curso da
 `{}` <br>
 **Response:**
 `{}`
+### Modificar todas las notas que cumplan con un criterio 
+Modifica todas las notas de los almnos que pertenecen a una materia.
+
+**URL**:  /students/subject/${idSubject} <br>
+
+**Method**:  [PUT] <br>
+**Ejemplo**: localhost:3000/students/subject/0 <br>
+**Request:**  
+`{
+"score": Number
+}` <br>
+
+`{}`
